@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creator Coin Twitch Bot!</title>
+    <meta name="description" content="A Twitch.tv Creator Coin Bot.">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/dd532795-a0db-4c04-9716-2806e7a024f4%2Ffavicon.ico?1496810242595" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: helvetica, arial, sans-serif;
+        margin: 25px;
+      }
+
+      h1 {
+        font-weight: bold;
+        color: pink;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      p {
+        max-width: 600px;
+      }
+
+      button {
+        font-size: 16px;
+        border-radius: 3px;
+        background-color: lightgrey;
+        border: 1px solid grey;
+        box-shadow: 2px 2px teal;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: yellow;
+      }
+
+      button:active {
+        box-shadow: none;
+      }
+
+      li {
+        margin-bottom: 5px;
+        max-width: 600px;
+      }
+
+      footer {
+        margin-top: 50px;
+        padding-top: 25px;
+        border-top: 1px solid lightgrey;
+      }
+
+      footer > a {
+        color: #BBBBBB;
+      }
+      
+      .container {
+        position: relative;
+        margin: 5px;
+      }
+      
+      .gif {
+        float: left;
+        display: block;
+        margin-right: 5px;
+      }
+      
+      .info {
+        overflow: hidden;
+        top: 0;
+        right: 0;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <article>
+          <div>
+            <b>Creator Coin Twitch Bot Configurator</b>
+            <br>
+            Bot name: creatorcoin_bot<br>
+            <br>
+            <center>
+            <b style="color:#ff0000">COMMANDS</b><br>
+            </center>
+            <table>
+              <!--
+              <tr>
+                <td>!help</td>
+                <td>&nbsp;&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-style:italic"></td>
+              </tr>
+              <tr>
+                <td colspan="2">&nbsp;</td>
+              </tr>
+-->
+              <tr>
+                <td><b>!bal {userId}</b></td>
+                <td>..Get balances</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-style:italic">ex. !bal 334384787x987x98787xx78x798793</td>
+              </tr>
+              <tr>
+                <td colspan="2">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><b>!coin {coinName}</b></td>
+                <td>..Get current USD value of coin</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-style:italic">ex. !coin RLY</td>
+              </tr>
+            </table>
+            <br>
+            <hr>
+            <center>
+            <b style="color:#ff0000">FAQ</b><br>
+            </center>
+            <table>
+              <tr>
+                <td style="font-weight:bold">How do I add this bot?</td>
+                <td>Register your Twitch account with the bot below.</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+        <br>
+        <hr>
+        <p>Register your Twitch account with this bot:</p>
+        <form>
+          <input style="font-size:18px" id="twitchName" type="text" maxlength="100" placeholder="{twitchUser}"> 
+          <button type="submit">Register</button>
+        </form>
+        <p>Registered Twitch Users:</p>
+        <section class="users">
+          <ul id="users"></ul>
+        </section>
+        <!--
+        <p><a href="/reset">Reset</a> | <a href="/clear">Clear</a></p>
+        -->
+      </div>
+    </div>
+    
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

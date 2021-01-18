@@ -1,0 +1,30 @@
+{
+  "name": "creatorcoin-bot",
+  "version": "1.0.1",
+  "description": "I am a twitch bot for displaying creator coin data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "tmi.js": "^1.5.0",
+    "xmlhttprequest":"1.8.0",
+    "sqlite3": "*",
+    "sequelize": "*"    
+  },
+  "engines": {
+    "node": "7.10.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/twitch-bot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "twitch.tv",
+		"sqlite3"
+  ]
+}
